@@ -1,0 +1,75 @@
+
+<!-- .whole>.p$@0*5 -->
+
+<style type="text/css">
+
+.whole {
+	width:800;
+	height: 400;
+	border: green 1px dashed;
+}
+
+[class^=p] {
+	width:20;
+	height: 20;
+	border: 1px red solid;
+}
+
+.p0 {
+	background-color: #00ff00;
+	/*foat后位置发生变化*/
+	float: right;
+	position: relative;
+	top: 190;
+	left: -400;
+/*	position: absolute;
+	left:400;
+	top: 200;*/
+
+}
+
+.p1 {
+	background-color: yellow;
+	position: relative;
+}
+
+.p2 {
+	position: relative;
+	background-color: #ff00ff;
+	top: -25;
+	margin: 0 0 0 0;
+	left: 780;
+}
+
+.p3 {
+	background-color: #999999;
+	position: relative;
+	left: 0;
+	top:335;
+}
+
+.p4 {
+	background-color: #7777ff;
+	position: relative;
+	left: 780;
+	top: 315;
+/*	position: absolute;
+	top: 390;
+	left:790;
+}
+*/
+</style>
+
+<div class="whole">
+	<div class="p0"></div>
+	<div class="p1"></div>
+	<div class="p2"></div>
+	<div class="p3"></div>
+	<div class="p4"></div>
+</div>
+
+<pre>
+	absolute position, float之后都不在文档流中?
+	relative相对于原来在flow中的位置?
+	float可以和relative合用,不过相对位置都要调整
+</pre>

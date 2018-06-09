@@ -1,0 +1,100 @@
+
+<style type="text/css">
+.comment {
+	margin: auto;
+	width: 50%;
+	min-height: 50px;
+	background-color: yellow;
+	white-space: pre;
+}
+
+.list_style li {
+	float:left;
+	background-color: #ff88ff;
+}
+
+
+
+.list2 li {
+	float: left;
+	background-color: #11fff4;
+	list-style: none;
+	color: red;
+	border-right: 1px black solid;
+}
+
+.container1 {
+	background-color: EAFFEE;
+	border:1px red solid;
+	min-height: 10%;
+}
+
+.list2 li:hover {
+	background-color: #ff9999;
+	color: green;
+	width: 70px;
+	height: 60px;
+	text-align: center;
+
+}
+
+.list3 li {
+	float: right;
+	background-color: #A5EBFF;
+	color: red;
+	margin: 3 10 3 10;
+	list-style: none;
+}
+
+.list3 li:hover {
+	width: 150px;
+	height: 100px;
+	background-color: 9AFFBA;
+	color:FF871F;
+}
+
+</style>
+
+<div class="comment">
+默认ul>li展示
+</div>
+<ul>
+	<li>史记</li>
+	<li>道德经</li>
+	<li>孙子兵法</li>
+	<li>荣枯鉴</li>
+	<li>鬼谷子</li>
+</ul>
+
+<div class="comment">
+显示为何乱了. ul>li布局还是有不少需要仔细了解了
+</div>
+<ul class="list_style">
+	<li>红楼梦</li>
+	<li>金瓶梅</li>
+	<li>唐璜</li>
+	<li>西厢记</li>
+	<li>琵琶行</li>
+</ul>
+
+<div class="comment">
+hover改变li单位大小,并改变背景色和文字颜色.
+list-style: none; 去掉前面图标
+</div>
+
+<div class="container1">
+	<ul class="list2">
+		<li>房地产</li>
+		<li>教育</li>
+		<li>医疗</li>
+		<li>政务</li>
+		<li>零售</li>
+	</ul>
+	<ul class="list3">
+		<li>SVM</li>
+		<li>LR</li>
+		<li>Optimization</li>
+		<li>Matrix</li>
+		<li>Statistics</li>
+	</ul>
+</div>

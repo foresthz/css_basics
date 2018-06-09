@@ -1,0 +1,71 @@
+
+<style type="text/css">
+
+.whole {
+	width: 800;
+	height: 400;
+	border: pink 2px dashed;
+
+	/*父节点设置为auto,chrome中居中*/
+	/*margin: auto;*/
+}
+
+[class*=p] {
+	width:20;
+	height: 20;
+	border: red 1px solid;
+	text-align: center;
+	color:yellow;
+}
+
+.p0 {
+	background-color: red;
+	position: absolute;
+	top:200;
+	left: 400;
+}
+
+.p1 {
+	background-color: #00ff00;
+}
+
+.p2 {
+	position: absolute;
+	left: 789;
+	top: 10;
+	background-color: #94C7FF;
+}
+
+.p3 {
+	position: absolute;
+	left:10;
+	top:390;
+	background-color: #F7F7F7;
+}
+
+.p4 {
+	position: absolute;
+	left:790;
+	top:390;
+	background-color: #B5C3CE;
+}
+
+/*.p2,.p3,.p4,.p1 {
+	float: right;
+}*/
+
+
+
+</style>
+
+<!-- .whole>.p$@0*5 -->
+
+<div class="whole">
+	<div class="p0">0</div>
+	<div class="p1">1</div>
+	<div class="p2">2</div>
+	<div class="p3">3</div>
+	<div class="p4">4</div>
+</div>
+
+文档流的概念很重要,可以脱离原来的流

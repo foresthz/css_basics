@@ -1,0 +1,64 @@
+
+<title>Descendant, Child Pattern</title>
+
+<style type="text/css">
+
+.szbf {
+	background-color: pink;
+}
+
+.szbf .content {
+	background-color: #ff9999;
+	color:yellow;
+	border: 1px dashed yellow;
+	margin: 10px 10px 10px 10px;
+}
+
+.szbf .content .content {
+	background-color: #111111;
+	color:red;
+}
+
+.content {
+	background-color: yellow;
+	color:red;
+}
+
+/*
+	why not work for .szbf .content .content ?
+*/
+.content:hover {
+	background-color: pink;
+	color:green;
+}
+
+.sz_container {
+	width: 80%;
+	height: 300px;
+	background-color: yellow;
+}
+
+.sztxt1 {
+	
+}
+
+
+</style>
+
+<div class="szbf">
+	<div class="content">
+		故能而示之不能，用而示之不用，近而示之远，远而示之近。利而诱之，乱而取之，实而备之，强而避之，怒而挠之，卑而骄之，佚而劳之，亲而离之，攻其无备，出其不意。此兵家之胜，不可先传也。
+	</div>
+</div>
+
+<div class="szbf">
+	<div class="content">
+		<div class="content">
+			夫未战而庙算胜者，得算多也；未战而庙算不胜者，得算少也。多算胜少算，而况于无算乎！吾以此观之，胜负见矣。
+		</div>
+	</div>
+</div>
+
+<div class="content">
+	凡用兵之法，驰车千驷，革车千乘，带甲十万，千里馈粮。
+</div>

@@ -1,0 +1,154 @@
+<h3>Relative居中布局</h3>
+<div class="e1">
+    <div class="b1"></div>
+</div>
+
+<hr>
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+<!-- <hr style="border-color:red;margin-top:20;clear:both"> -->
+<!-- <hr style="border-color:red;margin-top:20;clear:both"> -->
+<div class="padding_div"></div>
+<div class="bottom"></div>
+
+<div id="circle1">
+    <div id="wcontainer1">
+        <div id="word1">
+             忧勤是美德，太苦则无以适性怡情
+        </div>
+    </div>
+</div>
+
+<div id="circle2">
+    <div id="wcontainer2">
+        <div id="word2">
+             淡泊是高风，太枯则无以济人利物
+        </div>
+    </div>
+</div>
+
+<div id="bigcontainer">
+    <div id="circle3">
+        <div id="wcontainer3">
+            <div id="word3">
+                 事穷势蹙之人，当原其初心；功成行满之士，要观其末路。
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.b1 {
+    position: relative;
+    width: 50px;
+    height: 80px;
+    background-color: fuchsia;
+    margin: auto;
+    top:110px;  /* (D-d)/2*/
+    /* left: 30px; */
+}
+.e1{
+    width: 200px;
+    height: 300px;;
+    background-color: yellow;
+    margin: auto;
+}
+
+.left{
+    width: 30%;
+    background-color: paleturquoise;
+    height: 50%;
+    float: left;
+}
+.right {
+    width: 70%;
+    background-color: palegreen;
+    height: 50%;
+    float: right;
+}
+
+.padding_div {
+    width: 40rem;
+    height: 8px;
+    clear: both;
+}
+
+.bottom{
+    width: 30rem;
+    margin: auto;
+    height: 10em;
+    /* margin-top: 1em; */
+    /* z-index: 200; */
+    background-color: orange;
+}
+
+#circle1{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    display: table;
+    background-color:lime;
+    position: absolute;
+    right: 20px;
+    top:10px;
+}
+
+#wcontainer1{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#word1{
+    background-color: lightpink;
+    width: 50%;
+    margin: auto;
+}
+
+#circle2{
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    display: table;
+    background-color: lawngreen;
+    position: fixed;
+    top:30px;
+}
+
+#wcontainer2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#word2{
+    margin: auto;
+    width: 50%;
+}
+
+#bigcontainer{
+    position: relative;
+    width: 35%;
+    transform: scale(0.9);
+}
+
+#wcontainer3 {
+    /* position: absolute; */
+    width: 300px;
+    top: 20px;
+}
+
+#circle3 {
+    width: 220px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    height:220px;
+    background-color: gold;
+}
+
+#wcontainer3 {
+    display: table;
+}
+</style>
