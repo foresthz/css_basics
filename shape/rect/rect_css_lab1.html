@@ -1,0 +1,21 @@
+<div id="blk1">
+</div>
+
+<style>
+    #blk1 {
+        width: 10px;
+        height: 10px;
+        border: 50px;
+        border-style: solid;
+        border-color: red greenyellow pink blue;
+    }
+</style>
+
+<script>
+    document.getElementById('blk1').addEventListener('click', function (event) {
+        // alert('blk1');
+        alert(`ctrlKey: ${event.ctrlKey}, offSetX: ${event.offsetX}`);
+        debugger;
+
+    });
+</script>
