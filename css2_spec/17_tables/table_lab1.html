@@ -1,0 +1,112 @@
+<table id="t1">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>Lucy</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Kate</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Jennifer</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>富贵</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>光阴</td>
+        <td>32</td>
+    </tr>
+</table>
+
+<table id="t2">
+    <tr>
+        <th>Type</th>
+        <th>文字</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>一场闲富贵，狠狠争来，虽得还是失</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>百岁好光阴，忙忙过了，纵寿亦为夭。</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>红烛烧残，万念自然厌冷；</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>黄粱梦破，一身亦似云浮。</td>
+    </tr>
+</table>
+
+<hr>
+
+<table id="t3">
+    <tr>
+        <td>1</td>
+        <td>蓬茅下诵诗读书，日日与圣贤晤语，谁云贫是病？</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>樽罍边幕天席地，时时共造化氤氲，孰谓非禅？</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>兴来醉倒落花前，天地即为衾枕。</td>
+    </tr>
+</table>
+
+<style>
+table#t1 tr:nth-child(2n) {
+    background-color: rgba(33, 228, 186, 0.4);
+}
+
+table#t1 {
+    border: purple solid 1px;
+}
+
+table#t1 td,
+th {
+    border: seagreen 1px solid;
+}
+
+table#t2 tr:nth-child(1) {
+    background-color: sandybrown;
+}
+
+table#t2 tr+tr:nth-child(2n+1) {
+    background-color: paleturquoise;
+}
+
+table#t2 td {
+    padding: 0;
+}
+
+table#t2 tr {
+    border: solid black 1px;
+}
+
+table#t2 tr>td:nth-of-type(1) {
+    border: 1px solid black;
+}
+
+table#t3 {
+    border: green 1px solid;
+    /* padding: 0px; */
+    border-collapse: collapse;
+}
+
+table#t3 td{
+    border: green solid 1px;
+    
+}
+</style>
