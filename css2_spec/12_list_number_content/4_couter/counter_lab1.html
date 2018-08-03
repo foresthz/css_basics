@@ -1,0 +1,79 @@
+<ul class="u1">
+    <li>倚高才而玩世，背后须防射影之虫；饰厚貌以欺人，面前恐有照胆之镜。</li>
+    <li>心体澄彻，常在明镜止水之中，则天下自无可厌之事</li>
+    <li>意气和平，赏在丽日光风之内，则天下自无可恶之人。</li>
+    <li>当是非邪正之交，不可少迁就，少迁就则失从违之正</li>
+    <li>值利害得失之会，不可太分明，太分明则起趋避之私</li>
+</ul>
+
+<ul class="u2">
+    <li>苍蝇附骥，捷则捷矣，难辞处后之羞</li>
+    <li>萝茑依松，高则高矣，未免仰攀之耻</li>
+    <li>所以君子宁以风霜自挟，毋为鱼鸟亲人</li>
+    <li></li>
+    <li></li>
+</ul>
+
+<pre>
+ ul.u31>ul.u32*2>li.u32*4
+</pre>
+<ul class="u31">
+    <ul class="u32">
+        <li class="u32">伺察以为明者，常因明而生暗，故君子以恬养智；奋迅以为速者，多因速度而致迟，故君子以重持轻。</li>
+        <li class="u32"></li>
+        <li class="u32"></li>
+        <li class="u32"></li>
+    </ul>
+    <ul class="u32">
+        <li class="u32"></li>
+        <li class="u32"></li>
+        <li class="u32"></li>
+        <li class="u32"></li>
+    </ul>
+</ul>
+
+<style>
+    body {
+        counter-reset: u1 0 u2 1 u32;
+    }
+
+    .u1 li::before {
+        counter-increment: u1;
+        content: counter(u1, lower-roman);
+        margin-right: 0.5em;
+        border-left: 2px solid red;
+        padding-left: 8px;
+    }
+
+    .u2 li {
+        list-style-type: circle;
+    }
+
+    .u2 li::before {
+        content: counter(u2, decimal);
+        counter-increment: u2;
+        border-left: 4px pink solid;
+        padding-left: 7px;
+        padding-right: 8px;
+    }
+
+    /*可以在不同层次定义数字*/
+
+    .u32::before {
+        content: counters(u32, '-');
+        counter-increment: u32;
+        border-left: 4px greenyellow solid;
+    }
+
+    li.u32::before{
+        padding-right: 20px;
+    }
+
+    ul.u32>li.u32:nth-child(1) {
+        counter-reset: u32;
+    }
+    ul.u32 li{
+        padding-left: 30px;
+        list-style-type:georgian;
+    }
+</style>
