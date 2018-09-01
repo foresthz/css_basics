@@ -1,0 +1,58 @@
+<a href="http://twitter.com" class="link1">Twitter</a>
+
+<div class="top1">
+    <div class="btn1">
+        移动显示下面内容
+        <span style="font-size:0.6em;">余过古刹，于残经败纸中拾得《菜根谭》一录</span>
+    </div>
+    <div class="content1">
+        <a href="https://www.admin5.com">admin5</a>
+        <a href="https://docs.python.org/2/library/index.html">Python</a>
+        <a href="https://cran.r-project.org/package=rlang" style="font-size:2em;">RLang</a>
+        <a href="http://ruby-doc.org/core-1.9.3/index.html" style="color:lightcoral;font-size:3em;">Ruby</a>
+    </div>
+</div>
+
+<style>
+    .top1 {
+        background-color: yellow;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+    }
+
+    .top1 .btn1{
+        background-color: yellow;
+        float:right;
+    }
+
+    .top1 .content1 {
+        display: none;
+    }
+
+    .top1:hover .content1 {
+        display: block;
+        background: lightgreen;
+        font-size: 2em;
+        display: block;
+    }
+
+    .content1 a {
+        color: red;
+
+    }
+
+    a.link1 {
+        color: blue;
+    }
+
+    a.link1:hover {
+        color: red;
+    }
+</style>
+
+<script>
+    document.querySelectorAll('a').forEach(function(node){
+        node.target = "_blank";
+    });
+</script>
